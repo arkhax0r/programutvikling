@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.input.MouseEvent;
 
 /**
  *
@@ -20,17 +21,10 @@ public class GameOfLife extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
-        FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
-        Parent root = fxmlLoader.load();
-        
+        Parent root=FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
-        
         stage.setScene(scene);
-        stage.show();
-        
-        Controller controller = fxmlLoader.getController();
-        controller.createGrid();
-        
+        stage.show();    
     }
 
     /**

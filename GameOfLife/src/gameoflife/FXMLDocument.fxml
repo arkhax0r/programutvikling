@@ -106,7 +106,10 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </GridPane.margin>
          <children>
-            <Canvas fx:id="mycanvas" height="716.0" nodeOrientation="INHERIT" width="716.0" />
+            <Canvas fx:id="mycanvas" height="716.0" nodeOrientation="INHERIT" width="990.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Canvas>
          </children>
          <opaqueInsets>
             <Insets />
